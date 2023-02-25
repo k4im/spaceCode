@@ -127,6 +127,14 @@
 
     }
 
+    .container__scroll {
+        display: none;
+    }
+
+    .section__contact {
+        height: 100rem;
+    }
+
 }
 
 /* Media query até 425px portrait */
