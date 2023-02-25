@@ -50,6 +50,7 @@
 .hero__text {
     animation: loadEnterLeft 2s .1ms forwards ease-in-out;
     margin-top: 5.2rem;
+    display: block;
 }
 .hero__text .heading__secondary{
     margin: 10rem 18rem;
@@ -62,13 +63,11 @@
 
 .container__scroll {
     position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-2%, -50%);
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0rem;
+    align-self: flex-end;
     animation: opacity 2s .1ms forwards ease-in-out;
 }
 

@@ -1,5 +1,4 @@
-/* Media query até 1024px */
-
+/* Media query até 1024px*/
 @media screen and (max-width: 64em) {
     .container__nav {
         gap: 2rem;
@@ -72,10 +71,18 @@
         font-size: 1.6rem;
         width: 65rem;
     }
+    .footer {
+        margin-top: -28rem;
+    }
 }
-
-/* Media query até 768px */
-@media screen and (max-width: 48em) {
+/* Media query até 844px landscape */
+@media screen and (max-width: 62.5em) and (orientation: landscape) {
+    html {
+        font-size: 30%;
+    }
+}
+/* Media query até 768px  portrait*/
+@media screen and (max-width: 48em ) and (orientation: portrait) {
     .container__nav {
         justify-content: flex-start;
     }
@@ -97,7 +104,7 @@
         gap: 2rem;
     }
 }
-
+/* Media query até 425px portrait */
 @media screen and (max-width: 26.75em) {
     html {
         font-size: 37.5%; /* 6px */
@@ -126,7 +133,8 @@
         text-align: center;
     }
     .section__sobre {
-        width: 110%;
+        width: 100%;
+        overflow: hidden;
     }
     .section__sobre .paragraph { 
         width: 50rem;
@@ -140,3 +148,4 @@
         overflow: hidden;
     }
 }
+
