@@ -104,6 +104,31 @@
         gap: 2rem;
     }
 }
+/* Media query 720px landscape */
+@media screen and (max-width: 45.31em) and (orientation: landscape) {
+    html {
+        font-size: 30%;
+    }
+
+    .container__nav {
+        justify-content: flex-start;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+    }
+    .hamburguer-menu__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
 /* Media query até 425px portrait */
 @media screen and (max-width: 26.75em) {
     html {
@@ -149,8 +174,3 @@
     }
 }
 
-@media screen and (max-width: 26.75em) and (orientation: landscape) {
-    html {
-        font-size: 30%;
-    }
-}
