@@ -97,3 +97,39 @@
         gap: 2rem;
     }
 }
+
+@media screen and (max-width: 26.75em) {
+    html {
+        font-size: 37.5%; /* 6px */
+    }
+
+    .section__hero {
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__text .heading__secondary{
+       font-size: 2.5rem;
+    }
+
+    .section__contact .heading-primary {
+        /* font-size: 1.4rem; */
+        width: 80%;
+        text-align: center;
+    }
+
+    .section__sobre .heading-primary {
+        font-size: 2rem;
+        display: block;
+        width: 50rem;
+        text-align: center;
+    }
+
+    .section__sobre .paragraph { 
+        width: 50rem;
+        letter-spacing: 1.1px;
+    }
+    .form {
+        padding: 5rem;
+    }
+
+}
