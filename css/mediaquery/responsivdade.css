@@ -149,3 +149,8 @@
     }
 }
 
+@media screen and (max-width: 26.75em) and (orientation: landscape) {
+    html {
+        font-size: 30%;
+    }
+}
