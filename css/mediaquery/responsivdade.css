@@ -1,15 +1,30 @@
 /* Media query até 1024px*/
 @media screen and (max-width: 64em) {
     .container__nav {
+        justify-content: flex-start;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+    }
+    .hamburguer-menu__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .container__social {
         gap: 2rem;
+        margin-left: -8rem;
     }
     .hero__text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 0;
-        margin: 0;
         height: 75vh;
     }
     .container__scroll {
@@ -68,14 +83,14 @@
         justify-content: center;
     }
     .section__contact .heading-primary {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
     .section__sobre .heading-primary {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .section__sobre .paragraph {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         width: 65rem;
     }
     .footer {
