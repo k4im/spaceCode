@@ -1,8 +1,30 @@
 /* Media query até 1024px*/
-@media screen and (max-width: 64em){
-    .container__nav {
-        gap: 2rem;
+@media screen and (max-width: 64em) {
+    html {
+        font-size: 40%;
     }
+    .container__nav {
+        justify-content: flex-start;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+    }
+    .hamburguer-menu__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .container__social {
+        gap: 2rem;
+        margin-left: -8rem;
+    }
+
     .hero__text {
         display: flex;
         flex-direction: column;
@@ -76,7 +98,7 @@
         width: 65rem;
     }
     .footer {
-        margin-top: -28rem;
+        margin-top: -38rem;
     }
 }
 
