@@ -1,5 +1,5 @@
 /* Media query até 1024px*/
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 64em){
     .container__nav {
         gap: 2rem;
     }
@@ -10,6 +10,10 @@
         justify-content: center;
         gap: 0;
         margin: 0;
+        height: 75vh;
+    }
+    .container__scroll {
+        display: none;
     }
 
     .heading-primary-bottom {
@@ -75,39 +79,11 @@
         margin-top: -28rem;
     }
 }
-/* Media query até 844px landscape */
-@media screen and (max-width: 62.5em) and (orientation: landscape) {
-    html {
-        font-size: 30%;
-    }
-}
-/* Media query até 768px  portrait*/
-@media screen and (max-width: 48em ) and (orientation: portrait) {
-    .container__nav {
-        justify-content: flex-start;
-    }
-    .nav {
-        display: none;
-    }
-    .hamburguer-menu {
-        display: block;
-        position: fixed;
-    }
-    .hamburguer-menu__item {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
 
-    }
-
-    .container__social {
-        gap: 2rem;
-    }
-}
-/* Media query 720px landscape */
-@media screen and (max-width: 45.31em) and (orientation: landscape) {
+/* Media query de 720px até 1000px landscape */
+@media screen and (min-width: 43.31em) and (max-width: 62.5em) and (orientation: landscape) {
     html {
-        font-size: 30%;
+        font-size: 38%;
     }
 
     .container__nav {
@@ -134,14 +110,122 @@
     .section__contact {
         height: 100rem;
     }
-
 }
 
+/* Media query até 768px  portrait*/
+@media screen and (min-width: 48em )  and (orientation: portrait) {
+    .container__nav {
+        justify-content: flex-start;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+    }
+    .hamburguer-menu__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .container__social {
+        gap: 2rem;
+    }
+
+    .section__hero {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__text {
+        height: 75vh;
+    }
+
+    .footer {
+        margin-top: -32rem;
+    }
+}
+/* Media query até 700px */
+@media screen and (max-wdith: 43.75em) {
+    .section__sobre .paragraph {
+        font-size: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 31.87em){
+    html {
+        font-size: 38%;
+    }
+
+    .container__nav {
+        justify-content: flex-start;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+    }
+    .hamburguer-menu__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .section__hero {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__text {
+        height: 75vh;
+    }
+
+    .container__scroll {
+        display: none;
+    }
+
+    .section__contact {
+        height: 100rem;
+    }
+
+    .footer {
+        margin-top: -32rem;
+    }
+}
 /* Media query até 425px portrait */
 @media screen and (max-width: 26.75em) {
     html {
-        font-size: 37.5%; /* 6px */
+        font-size: 38%; /* 6px */
     }
+
+    .container__nav {
+        justify-content: flex-start;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+    }
+    .hamburguer-menu__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .container__social {
+        gap: 2rem;
+    }
+
     .section__hero {
         height: 100vh;
         align-items: center;
@@ -154,11 +238,12 @@
        font-size: 2.5rem;
     }
     .section__contact .heading-primary {
-        /* font-size: 1.4rem; */
         width: 80%;
         text-align: center;
     }
-
+    .section__processo .paragraph {
+        letter-spacing: 1px;
+    } 
     .section__sobre .heading-primary {
         font-size: 2rem;
         display: block;
@@ -171,7 +256,7 @@
     }
     .section__sobre .paragraph { 
         width: 50rem;
-        letter-spacing: 1.1px;
+        letter-spacing: 1px;
     }
     .form {
         padding: 5rem;
@@ -181,4 +266,5 @@
         overflow: hidden;
     }
 }
+
 
