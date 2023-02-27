@@ -403,6 +403,8 @@
 
     .section__sobre .paragraph {
         font-size: 1.4rem;
+        line-height: normal;
+        letter-spacing: 1px;
         width: 65rem;
     }
     .footer {
