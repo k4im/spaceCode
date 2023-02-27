@@ -410,7 +410,7 @@
     }
 }
 
-@media screen and (orientation:landscape) {  
+@media screen and (min-widht: 480px) and (max-width: 1024px) and (orientation:landscape) {  
     html {
         font-size: 38% ;
     }
