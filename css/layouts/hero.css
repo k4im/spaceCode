@@ -49,16 +49,21 @@
 }   
 .hero__text {
     animation: loadEnterLeft 2s .1ms forwards ease-in-out;
-    margin-top: 5.2rem;
-    display: block;
+    /* margin-top: 5.2rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 18rem;
 }
-.hero__text .heading__secondary{
-    margin: 10rem 18rem;
+.hero__text .container__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 18rem;
 }
 
 .hero__text .paragraph {
     width: 40rem;
-    margin: -7rem 18.2rem;
+    /* margin: -7rem 18.2rem; */
 }
 
 .container__scroll {
