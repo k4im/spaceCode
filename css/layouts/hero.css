@@ -57,13 +57,13 @@
 .hero__text .container__description {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     margin-left: 18rem;
 }
 
 .hero__text .paragraph {
     width: 40rem;
-    /* margin: -7rem 18.2rem; */
+    padding: 1rem 0rem;
 }
 
 .container__scroll {
