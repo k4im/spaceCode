@@ -309,7 +309,7 @@
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 38%; 
+        font-size: 37.5%; 
     }
 
     .container__nav {
@@ -416,8 +416,11 @@
     html {
         font-size: 38% ;
     }
+    .section__hero {
+        height: 125rem;
+    }
     .section__contact {
-        height: 100rem;
+        height: 125rem;
     }
 }
 
