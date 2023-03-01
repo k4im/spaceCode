@@ -317,6 +317,10 @@
         letter-spacing: 1px;
     }
 
+    .footer___text .heading-primary {
+        font-size: 1.8rem;
+    }
+
 
 }
 
@@ -425,7 +429,10 @@
         line-height: normal;
         letter-spacing: 1px;
         width: 90%;
-        /* padding: 2rem 2rem; */
+    }
+
+    .footer___text .heading-primary {
+        font-size: 1.8rem;
     }
 
 }

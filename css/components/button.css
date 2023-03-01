@@ -20,3 +20,28 @@
     background-color: var(--color-primary-light);
     color: var(--color-white);
 }
+
+.footer__btn:link, .footer__btn:visited {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+    background-color: var(--color-primary);
+    border-radius: 50rem;
+    transition: all .5s ease-in-out;
+}
+@media (hover: hover) {
+    .footer__btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+    
+    .footer__btn:active {
+        transform: translateY(0);
+        box-shadow: 0 0 2rem rgba(0, 0, 0, .10);
+        
+    }
+}
