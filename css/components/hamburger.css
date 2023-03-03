@@ -14,6 +14,7 @@
     cursor: pointer;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
     overflow: hidden;
+    z-index: 5;
 }
 
 .hamburguer-menu__item {
