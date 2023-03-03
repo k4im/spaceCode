@@ -1,6 +1,0 @@
-@media screen and (min-width: 1300px) {
-    .load--item {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-}
