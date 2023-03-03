@@ -13,9 +13,11 @@
     justify-content: center;
     gap: 15rem;
     overflow: hidden;
+    z-index: 2;
 }
 .text__projetos {
     padding: 5rem;
+    transition: transform .5s, opacity .5s;
 }
 .projetos__paragraph {
     width: 35rem;
@@ -34,6 +36,7 @@
     display: flex;
     gap: 2rem;
     overflow: hidden;
+    transition: transform .5s, opacity .5s;
 }
 
 .box {

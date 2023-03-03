@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    z-index: 2;
 }
 
 .section__contact .heading-primary {
@@ -20,11 +21,14 @@
     font-size: 3rem;
     border-bottom: 2px solid var(--color-primary-light);
     padding-bottom: 2rem;
+    transition: transform .5s, opacity .5s;
 }
 .form__container {
     width: 100%;
     display: flex;
     justify-content: flex-start;    
+    align-items: center;
+    transition: transform .5s, opacity .5s;
 }
 .form__container .form{
     display: flex;
@@ -59,3 +63,4 @@
 .contact__illustration {
     margin: 1.5rem 20rem;
 }
+

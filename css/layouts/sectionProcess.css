@@ -12,6 +12,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: transform .5s, opacity .5s;
+    z-index: 1;
 }
 .container__itens {
     width: 100%;

@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     gap: 25px;
+    transition: transform .5s, opacity .5s;
 }
 .footer___text {
     display: flex;
@@ -33,6 +34,6 @@
     color: var(--color-white);
 }
 
-.nav__item .nav__link:hover {
+.footer .nav__item .nav__link:hover {
     color: var(--color-primary);
 }
