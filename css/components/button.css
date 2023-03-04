@@ -19,6 +19,7 @@
     margin: 2rem 15rem;
     background-color: var(--color-primary-light);
     color: var(--color-white);
+    transition: all .5s ease-in-out;
 }
 
 .footer__btn:link, .footer__btn:visited {
@@ -31,6 +32,17 @@
     border-radius: 50rem;
     transition: all .5s ease-in-out;
 }
+.btn__outline:link, .btn__outline:visited {
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-white);
+    transition:  all .5s ease-in-out;
+}
+
 @media (hover: hover) {
     .footer__btn:hover {
         transform: translateY(-5px);
@@ -44,4 +56,20 @@
         box-shadow: 0 0 2rem rgba(0, 0, 0, .10);
         
     }
+
+    .btn__outline:hover .btn__outline:active{
+        color: var(--color-primary);
+        border-bottom: 2px solid var(--color-primary);
+    }
+
+    .btn--enviar:hover {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+
+    .btn--enviar:active {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+    
 }
