@@ -21,6 +21,9 @@
     animation: opacityLoad 2s .2ms forwards ease-in-out;
 
 }
+.nav {
+    margin-left: 9rem;
+}
 .nav .list__nav {
     list-style: none;
     display: flex;
@@ -100,4 +103,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container .icon--hero {
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* margin-left: 9rem; */
+}
+
+@media(hover:hover) {
+    .container .icon--hero:hover {
+        color: var(--color-primary-light)
+    }
+    
 }

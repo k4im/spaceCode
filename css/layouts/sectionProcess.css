@@ -14,6 +14,7 @@
     overflow: hidden;
     transition: transform .5s, opacity .5s;
     z-index: 1;
+    gap: 3rem;
 }
 .container__itens {
     width: 100%;

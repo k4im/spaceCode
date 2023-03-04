@@ -17,7 +17,7 @@ const home = document.getElementById("section--home");
 const projetos = document.getElementById("section--projetos");
 const contato = document.getElementById("section--contact");
 const sobre = document.getElementById("section--sobre");
-
+const btnFooter = document.getElementById("footerBtn");
 
 /*Adição de classe nas variaveis*/
 boxes.classList.add("load--item");
@@ -37,17 +37,17 @@ function btnShow(entries) {
     const [entry] = entries
     if(entry.isIntersecting) hiddenBtn.classList.remove("load--item");
     else if (!entry.isIntersecting) hiddenBtn.classList.add("load--item");
-}
+};
 /*Padrão de 25% de visibilidade para o observador ativar*/
 const defaultObsOptions = {
     root: null,
     threshold: .25
-}
+};
 /*Padrão de 50% de visibilidade para o observador ativar*/
 const fiftyObsOpt = {
     root: null,
     threshold: .50
-}
+};
 
 /*Definindo observadores*/
 const obsBoxes = new IntersectionObserver(visibleClass, defaultObsOptions);
@@ -59,7 +59,7 @@ const footerObs = new IntersectionObserver(visibleClass, defaultObsOptions);
 const obsBtn = new IntersectionObserver(btnShow, {
     root: null,
     threshold: .1
-})
+});
 
 /*Oberservando*/
 obsBoxes.observe(boxes);
@@ -75,7 +75,7 @@ function scrollToSection(element) {
     window.scrollTo({
         behavior: "smooth",
         top: element.offsetTop
-    })
+    });
 };
 homeBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -95,4 +95,9 @@ sobreBtn.addEventListener("click", (e) => {
 hiddenBtn.addEventListener("click", (e) => {
     e.preventDefault();
     scrollToSection(home);
-})
+});
+
+btnFooter.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(contato);
+});
