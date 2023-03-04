@@ -89,16 +89,16 @@
 }
 
 #projeto__um {
-    background-image: url(/img/web1.jpeg);
+    background-image: url(../../img/web1.jpeg);
     background-size: cover;
 }
 
 #projeto__dois {
-    background-image: url(/img/web2.jpeg);
+    background-image: url(../../img/web2.jpeg);
     background-size: cover;
 }
 
 #projeto__tres {
-    background-image: url(/img/web3.jpeg);
+    background-image: url(../../img/web3.jpeg);
     background-size: cover;
 }
