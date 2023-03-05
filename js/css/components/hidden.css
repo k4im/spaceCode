@@ -1,0 +1,21 @@
+.home-link {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background-color: var(--color-primary);
+    z-index: 6;
+    border-radius: 50rem;
+    cursor: pointer;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+    transition: transform .5s, opacity .5s;
+}
+
+.up-arrow {
+    font-size: 3rem;
+    color: var(--color-white);
+}

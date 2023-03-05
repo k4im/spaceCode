@@ -8,6 +8,7 @@ const sectionSobre = document.querySelector(".sobre__text-box");
 const footer = document.querySelector(".footer__container");
 const hiddenBtn = document.querySelector(".home-link");
 const hamburgerMenu = document.querySelector(".hamburguer-menu");
+const toggleMenu = document.querySelector(".toggle-menu");
 
 const homeBtn = document.getElementById("home--btn");
 const contatoBtn = document.getElementById("contato--btn");
@@ -19,6 +20,10 @@ const contato = document.getElementById("section--contact");
 const sobre = document.getElementById("section--sobre");
 const btnFooter = document.getElementById("footerBtn");
 
+const toggleHome = document.getElementById("toggle--home");
+const toggleContato = document.getElementById("toggle--contato");
+const toggleSobre = document.getElementById("toggle--sobre");
+
 /*Adição de classe nas variaveis*/
 boxes.classList.add("load--item");
 textProjects.classList.add("load--item");
@@ -27,6 +32,7 @@ containerForm.classList.add("load--item");
 sectionSobre.classList.add("load--item");
 footer.classList.add("load--item");
 hiddenBtn.classList.add("load--item");
+toggleMenu.classList.add("toggle-menu__hidden");
 /*Definição da função de remoção de classe*/
 function visibleClass (entries, observer) {
     const [entry] = entries;
@@ -38,6 +44,10 @@ function btnShow(entries) {
     if(entry.isIntersecting) hiddenBtn.classList.remove("load--item");
     else if (!entry.isIntersecting) hiddenBtn.classList.add("load--item");
 };
+
+function showMenu() {
+    toggleMenu.classList.toggle("toggle-menu__hidden");
+}
 /*Padrão de 25% de visibilidade para o observador ativar*/
 const defaultObsOptions = {
     root: null,
@@ -101,3 +111,23 @@ btnFooter.addEventListener("click", (e) => {
     e.preventDefault();
     scrollToSection(contato);
 });
+
+hamburgerMenu.addEventListener("click", showMenu);
+
+toggleHome.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(home);
+    showMenu();
+});
+
+toggleContato.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToSection(contato);
+    showMenu();
+});
+
+toggleSobre.addEventListener("click", (e) => { 
+    e.preventDefault();
+    scrollToSection(sobre);
+    showMenu();
+})
