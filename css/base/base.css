@@ -8,6 +8,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -23,9 +24,12 @@ main {
 section {
     width: 100%;
     height: 100vh;
+    min-height: 850px;
     overflow: hidden;
 }
-
+footer {
+    min-height: 850px;
+}
 img {
     width: 100%;
     height: 100%;
